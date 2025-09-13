@@ -8,14 +8,18 @@ function Header() {
         <Spotify size={"32"} />
       </div>
       <div id='header-search'>
-        <div id='search-home-icons'>
+        <div id='search-home-icons' className='header-icons'>
           <Home size={"24"} /> {/* 이거 홈버튼 홈 아닐때 모양바뀜 */}
         </div>
         <div id='header-search-input'>
+          <input id='search-input' placeholder='어떤 콘텐츠를 감상하고 싶으세요?' />
           <div id='search-icons-search' className='header-icons'>
             <Search size={"24"} />
           </div>
-          <input id='search-input' placeholder='어떤 콘텐츠를 감상하고 싶으세요?' />
+          <div id='search-kbd'>
+            <kbd className='search-kbd-txt'> ⌘ </kbd> {/* 이거 커맨드키가조금작음 */}
+            <kbd className='search-kbd-txt'> K </kbd>
+          </div>
           <div id='search-line' />
           <div id='search-icons-tippy' className='header-icons'>
             <Tippy size={"24"} />
