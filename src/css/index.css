@@ -1,5 +1,6 @@
 :root {
   font-family: 'Spotify Mix';
+  letter-spacing: 0px;
 
   color-scheme: light dark;
   color: #FFFFFF;
@@ -11,6 +12,7 @@
   -moz-osx-font-smoothing: grayscale;
 
   --gray: #1f1f1f;
+  --radius-full: 9999px;
 }
 
 html, body {
