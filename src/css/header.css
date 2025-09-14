@@ -147,7 +147,9 @@ header {
   padding: 4px 16px;
   border-radius: var(--radius-full);
   background-color: #FFFFFF;
+  cursor: pointer;
 }
+#premium:hover { transform: scale(1.04); } /* 아니 이거 마우스올라왓을때는 transition없고 내릴떄 잇는데 뭐임?????? */
 
 #premium-txt {
   margin: 2px 0;
@@ -163,7 +165,10 @@ header {
   color: #b3b3b3;
   font-size: 14px;
   font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
 }
+#download:hover { color: #FFFFFF; transform: scale(1.04); }
 
 nav {
   display: flex;
@@ -212,8 +217,33 @@ nav {
 #profile {
   width: 48px;
   height: 48px;
+  position: relative;
+  color: #FFFFFF;
   border-radius: var(--radius-full);
   background-color: var(--gray);
+  cursor: pointer;
+  transition: 0.2s;
+}
+#profile:hover { transform: scale(1.08); }
+/* 아니 이거 이름 넘어가는거 어떻게하지;;;; */
+#profile::after {
+  content: "진수화";
+  display: inline-block;
+  padding: 4px 8px;
+  position: absolute;
+  top: 54px;
+  right: 0;
+  font-size: 13px;
+  border-radius: 4px;
+  background-color: #282828;
+  box-shadow: 0 8px 8px #0000002a;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+#profile:hover::after {
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 
 #profile-img {
