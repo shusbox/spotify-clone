@@ -1,4 +1,5 @@
 header {
+  grid-column: 1 / 3;
   box-sizing: border-box;
   padding: 8px;
   width: 100%;
@@ -135,7 +136,7 @@ header {
   cursor: pointer;
   transition: 0.2s;
 }
-#search-icons-tippy:hover { color: #FFFFFF !important; }
+#search-icons-tippy:hover { color: #FFFFFF !important; } /* 아이콘 커져야됨 */
 
 #menu {
   display: flex;
