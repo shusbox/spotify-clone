@@ -149,6 +149,7 @@ header {
   border-radius: var(--radius-full);
   background-color: #FFFFFF;
   cursor: pointer;
+  transition: 0.2s;
 }
 #premium:hover { transform: scale(1.04); } /* 아니 이거 마우스올라왓을때는 transition없고 내릴떄 잇는데 뭐임?????? */
 
