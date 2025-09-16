@@ -1,6 +1,7 @@
 import Header from '../components/header.jsx'
 import MusicPlayer from '../components/musicPlayer.jsx'
-import { Add, Hide } from '../assets/icons.jsx'
+import { Add, Hide, Start } from '../assets/icons.jsx'
+import { cover1 } from '../assets/cover/index.jsx'
 import '../css/main.css'
 
 function Library() {
@@ -53,6 +54,20 @@ function Content() {
         <button id='content-header-select' className='content-header-selecter'> 모두 </button>
         <button className='content-header-selecter'> 음악 </button>
         <button className='content-header-selecter'> 팟캐스트 </button>
+      </div>
+      <div id='content-main'>
+        <div className='content-main-suggestion'>
+          <h2> 들어볼 만한 음악 </h2>
+        </div>
+        <div id='content-main-playlist-container'>
+          <div className='content-main-playlist'>
+            <div className='content-main-cover-container'>              
+              <div className='content-main-icons'> <Start size={"20"} /> </div>
+              <img className='content-main-cover' src={cover1} />
+            </div>
+            <p className='content-main-txt'> AIRI KANNA, 스텔라이브 및 HoneyChrrous</p>
+          </div>
+        </div>
       </div>
     </div>
   )
