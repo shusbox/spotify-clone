@@ -10,7 +10,19 @@ body {
 
 main {
   padding: 8px;
+  display: flex;
 }
+
+.main-line {
+  opacity: 0;
+  margin: 0 4px;
+  width: 1px;
+  height: 100%;
+  background-color: #838383;
+  cursor: grab;
+  transition: 0.2s;
+}
+.main-line:hover { opacity: 1; }
 
 #library {
   box-sizing: border-box;
@@ -159,3 +171,31 @@ main {
   transform: scale(1.04);
 }
 .library-box-btn p { margin: 0; font-size: 14px; font-weight: bold; }
+
+#content {
+  padding: 0 40px;
+}
+
+#content-header {
+  padding: 8px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+#content-header-select {
+  color: #000000;
+  background-color: #FFFFFF;
+}
+#content-header-select:hover { background-color: #f0f0f0; }
+.content-header-selecter {
+  padding: 8px 12px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: var(--radius-full);
+  background-color: #383838;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.content-header-selecter:hover { background-color: #3f3f3f; }

@@ -46,12 +46,26 @@ function Library() {
   )
 }
 
+function Content() {
+  return (
+    <div id='content'>
+      <div id='content-header'>
+        <button id='content-header-select' className='content-header-selecter'> 모두 </button>
+        <button className='content-header-selecter'> 음악 </button>
+        <button className='content-header-selecter'> 팟캐스트 </button>
+      </div>
+    </div>
+  )
+}
+
 function Index() {
   return (
     <div id='index'>
       <Header />
       <main>
         <Library />
+        <div className='main-line' />
+        <Content />
       </main>
       <MusicPlayer />
     </div>
