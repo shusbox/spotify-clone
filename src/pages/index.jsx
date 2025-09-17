@@ -1,7 +1,7 @@
 import Header from '../components/header.jsx'
 import MusicPlayer from '../components/musicPlayer.jsx'
 import { Add, Hide, Start } from '../assets/icons.jsx'
-import { cover1 } from '../assets/cover/index.jsx'
+import { cover1, cover2, cover3, cover4, cover5, cover6, cover7, cover8 } from '../assets/cover/index.jsx'
 import '../css/main.css'
 
 function Library() {
@@ -48,6 +48,64 @@ function Library() {
 }
 
 function Content() {
+  function ContentMainPlaylist({ img, txt }) {
+    return (
+      <div className='content-main-playlist'>
+        <div className='content-main-cover-container'>              
+          <div className='content-main-icons'> <Start size={"20"} /> </div>
+          <img className='content-main-cover' src={img} />
+        </div>
+        <p className='content-main-txt'> {txt} </p>
+      </div>
+    )
+  }
+  const content_main_playlist_arr_1 = [
+    { type: "playlist", img: cover1, txt: "Neckwav 및 TWICE" },
+    { type: "playlist", img: cover2, txt: "AIRI KANNA, 스텔라이브 및 HoneyChurros" }
+  ];
+
+  const content_main_playlist_arr_2 = [
+    { type: "playlist", img: cover3, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" },
+    { type: "playlist", img: cover4, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" },
+    { type: "playlist", img: cover5, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" },
+    { type: "playlist", img: cover6, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" },
+    { type: "playlist", img: cover7, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" },
+    { type: "playlist", img: cover8, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" }
+  ];
+
+  const content_main_playlist_1 = content_main_playlist_arr_1.map((item, index) => {
+    return (
+      <div key={index} className='content-main-playlist'>
+        <div className='content-main-cover-container'>              
+          <div className='content-main-icons'> <Start size={"20"} /> </div>
+          <img className='content-main-cover' src={item.img} />
+        </div>
+        <p className='content-main-txt'> {item.txt} </p>
+      </div>
+    )
+  });
+
+  const content_main_playlist_2 = content_main_playlist_arr_2.map((item, index) => {
+    return <ContentMainPlaylist key={index} img={item.img} txt={item.txt} />
+  })
+
+  const playlist_num = {
+    1: content_main_playlist_1,
+    2: content_main_playlist_2
+  };
+
+  function ContentMainPlaylistContainer({ num, title }) {
+    const recall = playlist_num[num];
+    return (
+      <>
+        <h2 className='content-main-suggestion'> {title} </h2>
+        <div id='content-main-playlist-container'>
+          {recall}
+        </div>      
+      </>
+    )
+  }
+
   return (
     <div id='content'>
       <div id='content-header'>
@@ -56,18 +114,8 @@ function Content() {
         <button className='content-header-selecter'> 팟캐스트 </button>
       </div>
       <div id='content-main'>
-        <div className='content-main-suggestion'>
-          <h2> 들어볼 만한 음악 </h2>
-        </div>
-        <div id='content-main-playlist-container'>
-          <div className='content-main-playlist'>
-            <div className='content-main-cover-container'>              
-              <div className='content-main-icons'> <Start size={"20"} /> </div>
-              <img className='content-main-cover' src={cover1} />
-            </div>
-            <p className='content-main-txt'> AIRI KANNA, 스텔라이브 및 HoneyChrrous</p>
-          </div>
-        </div>
+        <ContentMainPlaylistContainer num={1} title={"회원님을 위한 추천"} />
+        <ContentMainPlaylistContainer num={2} title={"회원님을 위한 추천"} />
       </div>
     </div>
   )
