@@ -114,8 +114,8 @@ function Content() {
         <button className='content-header-selecter'> 팟캐스트 </button>
       </div>
       <div id='content-main'>
-        <ContentMainPlaylistContainer num={1} title={"회원님을 위한 추천"} />
-        <ContentMainPlaylistContainer num={2} title={"회원님을 위한 추천"} />
+        <ContentMainPlaylistContainer num={1} title={"들어볼 만한 음악"} />
+        <ContentMainPlaylistContainer num={2} title={"추천 차트"} />
       </div>
     </div>
   )
