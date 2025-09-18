@@ -1,0 +1,147 @@
+#library {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 420px !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  border-radius: 8px;
+  background-color: #121212;
+}
+/* 아니 이거 정렬이 안맞는데 알아서 해결하삼 */
+#library:hover #library-title-txt-icons {
+  width: 16px;
+  margin: 0 8px 0 0;
+  opacity: 1;
+  transform: translateX(10px);
+}
+
+#library-title {
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#library-title-txt-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+  color: #a2a2a2;
+  cursor: pointer;
+}
+#library-title-txt-container::after {
+  content: "내 라이브러리 숨기기";
+  display: inline-block;
+  padding: 4px 8px;
+  position: absolute;
+  top: -36px;
+  left: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #282828;
+  box-shadow: 0 8px 8px #0000002a;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+#library-title-txt-container:hover::after {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+#library-title-txt-icons {
+  width: 0;
+  opacity: 0;
+  transition: 0.2s;
+}
+#library-title-txt-icons:hover { color: #FFFFFF; }
+
+#library-title-txt {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 16px;
+}
+
+#library-create {
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  color: #b3b3b3;
+  border-radius: var(--radius-full);
+  background-color: var(--gray);
+  cursor: pointer;
+  transition: 0.2s;
+}
+#library-create:hover {
+  color: #FFFFFF;
+  background-color: #282828;
+}
+#library-create::after {
+  content: "플레이리스트, 폴더, 잼 만들기";
+  display: inline-block;
+  padding: 4px 8px;
+  position: absolute;
+  top: -36px;
+  left: -40px;
+  font-size: 14px;
+  border-radius: 4px;
+  background-color: #282828;
+  box-shadow: 0 8px 8px #0000002a;
+  opacity: 0;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+#library-create:hover::after {
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+#library-create-txt {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#library-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.library-box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-radius: 8px;
+  background-color: var(--gray);
+}
+
+.library-box-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.library-box-title h3 { margin: 0; font-size: 16px; }
+.library-box-title p { margin: 0; font-size: 14px; }
+
+.library-box-btn {
+  align-self: flex-start;
+  padding: 6px 12px;
+  color: #000000;
+  border-radius: var(--radius-full);
+  background-color: #FFFFFF;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.library-box-btn:hover {
+  transform: scale(1.04);
+}
+.library-box-btn p { margin: 0; font-size: 14px; font-weight: bold; }
