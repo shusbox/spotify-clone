@@ -87,7 +87,7 @@ function Content() {
 
   const content_main_playlist_2 = content_main_playlist_arr_2.map((item, index) => {
     return <ContentMainPlaylist key={index} img={item.img} txt={item.txt} />
-  })
+  });
 
   const playlist_num = {
     1: content_main_playlist_1,
@@ -97,12 +97,12 @@ function Content() {
   function ContentMainPlaylistContainer({ num, title }) {
     const recall = playlist_num[num];
     return (
-      <>
+      <div className='content-main-suggestion-container'>
         <h2 className='content-main-suggestion'> {title} </h2>
         <div id='content-main-playlist-container'>
           {recall}
         </div>      
-      </>
+      </div>
     )
   }
 
@@ -117,6 +117,13 @@ function Content() {
         <ContentMainPlaylistContainer num={1} title={"들어볼 만한 음악"} />
         <ContentMainPlaylistContainer num={2} title={"추천 차트"} />
       </div>
+      <footer>
+        <div className='content-line' />
+        <div>
+          
+        </div>
+        <div className='content-line' />
+      </footer>
     </div>
   )
 }
