@@ -19,14 +19,10 @@
 
 #library-title {
   padding: 0 8px;
-  display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
 #library-title-txt-container {
-  display: flex;
-  align-items: center;
   gap: 12px;
   position: relative;
   color: #a2a2a2;
@@ -68,8 +64,6 @@
 
 #library-create {
   padding: 8px 16px;
-  display: flex;
-  align-items: center;
   gap: 8px;
   position: relative;
   color: #b3b3b3;
@@ -114,34 +108,3 @@
   flex-direction: column;
   gap: 20px;
 }
-
-.library-box {
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  border-radius: 8px;
-  background-color: var(--gray);
-}
-
-.library-box-title {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-.library-box-title h3 { margin: 0; font-size: 16px; }
-.library-box-title p { margin: 0; font-size: 14px; }
-
-.library-box-btn {
-  align-self: flex-start;
-  padding: 6px 12px;
-  color: #000000;
-  border-radius: var(--radius-full);
-  background-color: #FFFFFF;
-  cursor: pointer;
-  transition: 0.2s;
-}
-.library-box-btn:hover {
-  transform: scale(1.04);
-}
-.library-box-btn p { margin: 0; font-size: 14px; font-weight: bold; }
