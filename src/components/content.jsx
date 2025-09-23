@@ -1,5 +1,5 @@
-import { Start } from '../assets/icons.jsx'
 import { cover1, cover2, cover3, cover4, cover5, cover6, cover7, cover8 } from '../assets/cover/index.jsx'
+import { Start } from '../assets/icons.jsx'
 import '../css/content.css'
 
 function Content() {

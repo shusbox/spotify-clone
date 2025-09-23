@@ -46,6 +46,31 @@
   align-items: center;
 }
 
+#nowplaying {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  color: #b3b3b3;
+}
+
+#nowplaying-album-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+}
+
+#nowplaying-album-title {
+  margin: 0;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+#nowplaying-album-singer {
+  margin: 0;
+  font-size: 12px;
+}
+
 #playing-selection {
   display: flex;
   flex-direction: column;
