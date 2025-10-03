@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Add, Hide } from '../assets/icons'
+import { Add, Hide, FullSize } from '../assets/icons'
 import '../css/library.css'
 
 const Flex = styled.div`
@@ -17,13 +17,13 @@ function Library() {
           </div>
           <h2 id='library-title-txt'> 내 라이브러리 </h2>
         </Flex>
-        <div>
+        <Flex id='library-create-container'>
           <Flex id='library-create'>
             <Add size={"16"} />
             <p id='library-create-txt'> 만들기 </p>
           </Flex>
-          <div id='library-fullscreen'></div>
-        </div>
+          <div id='library-fullscreen'> <FullSize size={16} /> </div>
+        </Flex>
       </Flex>
       <Flex id='library-container'>
 

@@ -76,11 +76,7 @@ function Content() {
         <ContentMainPlaylistContainer num={2} title={"추천 차트"} />
       </div>
       <footer>
-        <div className='content-line' />
-        <div>
-          
-        </div>
-        <div className='content-line' />
+
       </footer>
     </div>
   )
