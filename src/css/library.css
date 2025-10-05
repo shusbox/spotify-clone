@@ -5,7 +5,7 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 8px;
   border-radius: 8px;
   background-color: #121212;
 }
@@ -119,7 +119,10 @@
   align-items: center;
   justify-content: center;
   color: #b3b3b3;
+  border-radius: var(--radius-full);
 }
+
+#library-fullscreen:hover { color: #FFFFFF; background-color: #1d1d1d; }
 
 #library-filter {
   margin-left: 8px;
@@ -133,7 +136,10 @@
   font-size: 14px;
   border-radius: var(--radius-full);
   background-color: #2a2a2a;
+  cursor: pointer;
+  transition: 0.2s;
 }
+.library-filter-select:hover { background-color: #333333; }
 
 #library-search {
   margin: 0 16px 0 8px;
@@ -141,13 +147,49 @@
   justify-content: space-between;
 }
 
+#library-search-icon { border-radius: var(--radius-full); cursor: pointer; }
+#library-search-icon:hover { color: #FFFFFF; background-color: #262626; }
+
 #library-search-menu {
   gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
 }
+#library-search-menu:hover { color: #FFFFFF; transform: scale(1.05);}
 #library-search-menu-txt { margin: 0; font-size: 14px; }
 
 #library-container {
-  display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: normal;
 }
+
+.library-playlist {
+  padding: 8px;
+  gap: 12px;
+  position: relative;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.library-playlist:hover { background-color: #1f1f1f; }
+.library-playlist:hover .library-playlist-img-hover { opacity: 1; }
+
+.library-playlist-img {
+  width: 48px;
+  height: 48px;
+  border-radius: 4px;
+  background-color: #00000050;
+}
+.library-playlist-img-hover {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  opacity: 0;
+}
+
+.library-playlist-title { margin: 0; font-size: 16px; font-weight: normal;}
+.library-playlist-des { margin: 0; color: #b3b3b3; font-size: 14px; }

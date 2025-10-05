@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import { Add, Hide, FullSize, Search, List } from '../assets/icons'
+import { Start, Add, Hide, FullSize, Search, List } from '../assets/icons'
+import { album1 } from '../assets/album/index.jsx'
 import '../css/library.css'
 
 const Flex = styled.div`
@@ -16,6 +17,19 @@ const Icon = styled.div`
 `
 
 function Library() {
+  function Playlist({ title, des }) {
+    return (
+      <Flex className='library-playlist'>
+        <Flex className='library-playlist-img-hover'> <Start size={"20"} /> </Flex>
+        <img className='library-playlist-img' src={album1} />
+        <div>
+          <h3 className='library-playlist-title'> {title} </h3>
+          <p className='library-playlist-des'> {des} </p>
+        </div>
+      </Flex>
+    )
+  }
+
   return (
     <div id='library'>
       <Flex id='library-header'>
@@ -31,21 +45,23 @@ function Library() {
               <Add size={"16"} />
               <p id='library-create-txt'> 만들기 </p>
             </Flex>
-            <div id='library-fullscreen'> <FullSize size={"16"} /> </div>
+            <div id='library-fullscreen'> <FullSize size={"16"} /> </div> {/* 이거 툴팁 올라오게 해야되는데ㅠㅠ */}
           </Flex>
         </Flex>
         <div id='library-filter'>
           <p className='library-filter-select'> 플레이리스트 </p>
         </div>
         <Flex id='library-search'>
-          <Icon> <Search size={"16"} /> </Icon>
+          <Icon id='library-search-icon'> <Search size={"16"} /> </Icon>
           <Flex id='library-search-menu'>
             <p id='library-search-menu-txt'> 최근 </p>
             <List size={"16"} />
           </Flex>
         </Flex>
       </Flex>
-      <Flex id='library-container'></Flex>
+      <Flex id='library-container'>
+        <Playlist title={"내 플레이리스트"} des={"플레이리스트 • 진수화"} />
+      </Flex>
     </div>
   )
 }
