@@ -17,8 +17,14 @@
   transform: translateX(10px);
 }
 
+#library-header {
+  flex-direction: column;
+  align-items: normal;
+  gap: 12px;
+}
+
 #library-title {
-  padding: 0 8px;
+  padding: 4px 0;
   justify-content: space-between;
 }
 
@@ -114,6 +120,31 @@
   justify-content: center;
   color: #b3b3b3;
 }
+
+#library-filter {
+  margin-left: 8px;
+  display: flex;
+}
+
+.library-filter-select {
+  margin: 0;
+  padding: 6px 12px;
+  color: #FFFFFF;
+  font-size: 14px;
+  border-radius: var(--radius-full);
+  background-color: #2a2a2a;
+}
+
+#library-search {
+  margin: 0 16px 0 8px;
+  color: #b4b4b4;
+  justify-content: space-between;
+}
+
+#library-search-menu {
+  gap: 8px;
+}
+#library-search-menu-txt { margin: 0; font-size: 14px; }
 
 #library-container {
   display: flex;
