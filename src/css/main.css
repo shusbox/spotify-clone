@@ -2,12 +2,6 @@ body {
   overflow: hidden;
 }
 
-#index {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 64px minmax(0, 1fr) 88px;
-}
-
 main {
   box-sizing: border-box;
   padding: 0 8px;

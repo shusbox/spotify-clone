@@ -1,3 +1,4 @@
+import { Wrapper } from '../styles/common.js'
 import Header from '../components/header.jsx'
 import MusicPlayer from '../components/musicPlayer.jsx'
 import Library from '../components/library.jsx'
@@ -6,7 +7,7 @@ import '../css/main.css'
 
 function Index() {
   return (
-    <div id='index'>
+    <Wrapper>
       <Header />
       <main>
         <Library />
@@ -14,7 +15,7 @@ function Index() {
         <Content />
       </main>
       <MusicPlayer />
-    </div>
+    </Wrapper>
   )
 }
 

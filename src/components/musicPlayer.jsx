@@ -43,12 +43,12 @@ function MusicPlayer() {
   return (
     <div id='music-player'>
       <div id='nowplaying'>
-        <img id='nowplaying-album-img' src={album1} />
+        {/* <img id='nowplaying-album-img' src={album1} />
         <div id='nowplaying-album'>
           <h3 id='nowplaying-album-title'> MEMORY </h3>
           <p id='nowplaying-album-singer'> 이세계 아이돌 </p>
         </div>
-        <ToggleShow size={"16"} />
+        <ToggleShow size={"16"} /> */}
       </div>
       <div id='playing-selection'>
         <div id='player-controls'>

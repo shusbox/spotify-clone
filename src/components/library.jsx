@@ -2,11 +2,7 @@ import styled from "styled-components";
 import { Start, Add, Hide, FullSize, Search, List } from '../assets/icons'
 import { album1 } from '../assets/album/index.jsx'
 import '../css/library.css'
-
-const Flex = styled.div`
-  display: flex;
-  align-items: center;
-`;
+import { Flex } from '../styles/common.js'
 
 const Icon = styled.div`
   width: 32px;
