@@ -75,9 +75,7 @@ function Content() {
         <ContentMainPlaylistContainer num={1} title={"들어볼 만한 음악"} />
         <ContentMainPlaylistContainer num={2} title={"추천 차트"} />
       </div>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </div>
   )
 }
