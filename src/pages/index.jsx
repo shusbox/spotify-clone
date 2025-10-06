@@ -2,7 +2,7 @@ import { Wrapper } from '../styles/common.js'
 import Header from '../components/header.jsx'
 import MusicPlayer from '../components/musicPlayer.jsx'
 import Library from '../components/library.jsx'
-import Content from '../components/content.jsx'
+import MainContent from '../components/contentMain.jsx'
 import '../css/main.css'
 
 function Index() {
@@ -12,7 +12,7 @@ function Index() {
       <main>
         <Library />
         <div className='main-line' />
-        <Content />
+        <MainContent />
       </main>
       <MusicPlayer />
     </Wrapper>

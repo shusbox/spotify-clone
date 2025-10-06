@@ -1,8 +1,9 @@
+import { Content } from '../styles/common.js'
 import { cover1, cover2, cover3, cover4, cover5, cover6, cover7, cover8 } from '../assets/cover/index.jsx'
 import { Start } from '../assets/icons.jsx'
 import '../css/content.css'
 
-function Content() {
+function MainContent() {
   function ContentMainPlaylist({ img, txt }) {
     return (
       <div className='content-main-playlist'>
@@ -65,7 +66,7 @@ function Content() {
   }
 
   return (
-    <div id='content'>
+    <Content>
       <div id='content-header'>
         <button id='content-header-select' className='content-header-selecter'> 모두 </button>
         <button className='content-header-selecter'> 음악 </button>
@@ -76,8 +77,8 @@ function Content() {
         <ContentMainPlaylistContainer num={2} title={"추천 차트"} />
       </div>
       <footer></footer>
-    </div>
+    </Content>
   )
 }
 
-export default Content
+export default MainContent
