@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Spotify, Home, Search, Tippy, Download, Notification, Social } from '../assets/icons.jsx'
 import '../css/header.css'
@@ -13,9 +14,9 @@ const Icon = styled.div`
 function Header() {
   return (
     <header>
-      <Icon id='header-logo'> <Spotify size={"32"} /> </Icon>
+      <Link to='/'> <Icon id='header-logo'> <Spotify size={"32"} /> </Icon> </Link>
       <div id='header-search'>
-        <Icon id='search-home-icons'> <Home size={"24"} /> {/* 이거 홈버튼 홈 아닐때 모양바뀜 */} </Icon>
+        <Link to='/'> <Icon id='search-home-icons'> <Home size={"24"} /> {/* 이거 홈버튼 홈 아닐때 모양바뀜 */} </Icon> </Link>
         <div id='header-search-input'>
           <input id='search-input' placeholder='어떤 콘텐츠를 감상하고 싶으세요?' />
           <Icon id='search-icons-search'> <Search size={"24"} /> </Icon>
@@ -28,9 +29,7 @@ function Header() {
         </div>
       </div>
       <div id='menu'>
-        <div id='premium'>
-          <p id='premium-txt'> Premium 둘러보기 </p>
-        </div>
+        <Link to='/premium'> <button id='premium'> Premium 둘러보기 </button> </Link>
         <div id='download'>
           <Download size={"16px"} />
           <p> 앱 설치하기 </p>

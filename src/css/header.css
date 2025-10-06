@@ -139,20 +139,16 @@ header {
 }
 
 #premium {
-  padding: 4px 16px;
+  padding: 8px 16px;
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
   border-radius: var(--radius-full);
   background-color: #FFFFFF;
   cursor: pointer;
   transition: 0.2s;
 }
 #premium:hover { transform: scale(1.04); } /* 아니 이거 마우스올라왓을때는 transition없고 내릴떄 잇는데 뭐임?????? */
-
-#premium-txt {
-  margin: 2px 0;
-  color: #000000;
-  font-size: 14px;
-  font-weight: bold;
-}
 
 #download {
   display: flex;

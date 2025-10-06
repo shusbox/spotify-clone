@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { Start, Add, Hide, FullSize, Search, List } from '../assets/icons'
 import { album1 } from '../assets/album/index.jsx'
@@ -56,7 +57,7 @@ function Library() {
         </Flex>
       </Flex>
       <Flex id='library-container'>
-        <Playlist title={"내 플레이리스트"} des={"플레이리스트 • 진수화"} />
+        <Link to='/playlist'> <Playlist title={"내 플레이리스트"} des={"플레이리스트 • 진수화"} /> </Link>
       </Flex>
     </div>
   )
