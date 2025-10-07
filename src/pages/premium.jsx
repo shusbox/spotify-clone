@@ -1,11 +1,24 @@
-import { Wrapper } from '../styles/common.js'
+import { Wrapper, Content } from '../styles/common.js'
 import Header from '../components/header.jsx'
 import Library from '../components/library.jsx'
 import MusicPlayer from '../components/musicPlayer.jsx'
-import PremiumContent from '../components/premiumContent.jsx'
+import PremiumHeader from '../components/premium/title.jsx'
+import PremiumPlan from '../components/premium/plan.jsx'
+import PremiumBoon from '../components/premium/boon.jsx'
 import '../css/main.css'
+import '../css/premium.css'
 
-function Premium() {
+const Premium = () => {
+  const PremiumContent = () => {
+    return (
+      <Content id='premium-content'>
+        <PremiumHeader />
+        <PremiumPlan />
+        <PremiumBoon />
+      </Content>
+    )
+  }
+
   return (
     <Wrapper>
       <Header />

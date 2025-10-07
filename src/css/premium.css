@@ -43,6 +43,7 @@
   min-width: 462px;
   max-width: 680px;
   gap: 40px;
+  position: relative;
 }
 
 #premium-plan-txt-container {
@@ -58,9 +59,32 @@
   border-radius: 4px;
   background-color: #FFFFFF;
 }
+.premium-plan-card-img {
+  width: 45px;
+  height: 30px;
+}
 
 #premium-plan-container {
   flex-direction: column;
   gap: 8px;
 }
-#premium-card-more { text-decoration: underline; }
+#premium-plan-card-more-txt { text-decoration: underline; }
+#premium-plan-card-more-txt:hover + #premium-plan-card-more { opacity: 1; }
+
+#premium-plan-card-more {
+  padding: 8px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  position: absolute;
+  bottom: -76px;
+  border-radius: 8px;
+  background-color: #FFFFFF;
+  opacity: 0;
+}
+
+#premium-boon {
+  flex-direction: row;
+  gap: 32px;
+}
+.premium-boon-list { gap: 4px; }
