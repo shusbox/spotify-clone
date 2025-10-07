@@ -20,4 +20,7 @@ const Flex = styled.div`
   align-items: center;
 `;
 
-export { Wrapper, Content, Flex }
+const Title = styled.h1`margin: 0;`;
+const Txt = styled.p`margin:0;`;
+
+export { Wrapper, Content, Flex, Title, Txt }
