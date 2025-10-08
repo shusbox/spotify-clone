@@ -1,12 +1,13 @@
-import { Wrapper, Content } from '../styles/common.js'
-import Header from '../components/header.jsx'
-import Library from '../components/library.jsx'
-import MusicPlayer from '../components/musicPlayer.jsx'
-import PremiumHeader from '../components/premium/title.jsx'
-import PremiumPlan from '../components/premium/plan.jsx'
-import PremiumBoon from '../components/premium/boon.jsx'
-import '../css/main.css'
-import '../css/premium.css'
+import { Wrapper, Content } from '../styles/common.js';
+import Header from '../components/header.jsx';
+import Library from '../components/library.jsx';
+import MusicPlayer from '../components/musicPlayer.jsx';
+import PremiumHeader from '../components/premium/title.jsx';
+import PremiumPlan from '../components/premium/plan.jsx';
+import PremiumBoon from '../components/premium/boon.jsx';
+import PremiumPromotions from '../components/premium/promotions.jsx';
+import '../css/main.css';
+import '../css/premium.css';
 
 const Premium = () => {
   const PremiumContent = () => {
@@ -15,6 +16,7 @@ const Premium = () => {
         <PremiumHeader />
         <PremiumPlan />
         <PremiumBoon />
+        <PremiumPromotions />
       </Content>
     )
   }

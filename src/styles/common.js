@@ -4,7 +4,7 @@ const Wrapper = styled.div`
   height: 100vh;
   display: grid;
   grid-template-rows: 64px minmax(0, 1fr) 88px;
-`
+`;
 
 const Content = styled.div`
   flex: 1;
@@ -13,7 +13,7 @@ const Content = styled.div`
   background-color: #121212;
   overflow-x: hidden;
   overflow-y: scroll;
-`
+`;
 
 const Flex = styled.div`
   display: flex;
@@ -22,5 +22,6 @@ const Flex = styled.div`
 
 const Title = styled.h1`margin: 0;`;
 const Txt = styled.p`margin:0;`;
+const UnderlineText = styled.p`margin: 0; text-decoration: underline;`;
 
-export { Wrapper, Content, Flex, Title, Txt }
+export { Wrapper, Content, Flex, Title, Txt, UnderlineText }

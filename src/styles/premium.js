@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const PremiumContainer = styled.div`
+const Container = styled.div`
   padding: 36px;
   display: flex;
   flex-direction: column;
@@ -8,4 +8,14 @@ const PremiumContainer = styled.div`
   text-align: center;
 `
 
-export { PremiumContainer }
+const BoldText = styled.div`
+  margin: 0;
+  font-weight: bold;
+`
+
+const FooterText = styled.div`
+  margin: 0;
+  font-size: 11px;
+`
+
+export { Container, BoldText, FooterText }

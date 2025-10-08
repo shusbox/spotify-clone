@@ -88,3 +88,81 @@
   gap: 32px;
 }
 .premium-boon-list { gap: 4px; }
+
+/* promotion */
+#premium-promotions-card-pink .premium-promotions-card-range { color: #ffd2d8; }
+#premium-promotions-card-pink .premium-promotions-card-boon,
+#premium-promotions-card-pink .premium-promotions-card-startBtn { background-color: #ffd2d8; }
+
+#premium-promotions-card-yellow .premium-promotions-card-range { color: #ffc863; }
+#premium-promotions-card-yellow .premium-promotions-card-boon,
+#premium-promotions-card-yellow .premium-promotions-card-startBtn { background-color: #ffc863; }
+
+#premium-promotions-card-green .premium-promotions-card-range { color: #d0f56a; }
+#premium-promotions-card-green .premium-promotions-card-boon,
+#premium-promotions-card-green .premium-promotions-card-startBtn { background-color: #d0f56a; }
+
+#premium-promotions {
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.premium-promotions-card {
+  padding: 16px;
+  width: 300px;
+  height: 392px;
+  gap: 20px;
+  position: relative;
+  border-radius: 8px;
+  background-color: #242424;
+}
+
+.premium-promotions-card-boon {
+  padding: 4px 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+  border-radius: 8px 0 8px 0;
+}
+
+.premium-promotions-card-title {
+  margin-top: 40px;
+  gap: 8px;
+}
+
+.premium-promotions-card-spotify {
+  display: flex;
+  gap: 4px;
+}
+
+.premium-promotions-card-range-subprice {
+  color: #b3b3b3;
+  font-size: 14px;
+}
+
+.premium-promotions-card-subtitle { gap: 12px; }
+
+.premium-promotions-card-description { gap: 20px; }
+
+.premium-promotions-card-ul {
+  margin: 0;
+  padding-left: 16px;
+}
+
+.premium-promotions-card-startBtn {
+  padding: 14px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: var(--radius-full);
+}
+
+.premiu-promotions-card-footer {
+  color: #a3a3a3;
+  text-align: center;
+}

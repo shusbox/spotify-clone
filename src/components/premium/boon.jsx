@@ -1,5 +1,5 @@
 import { Flex, Title, Txt } from '../../styles/common.js'
-import { PremiumContainer } from '../../styles/premium.js'
+import { Container } from '../../styles/premium.js'
 import { Check } from '../../assets/icons.jsx'
 import '../../css/premium.css'
 
@@ -13,7 +13,7 @@ const Boon = () => {
     )
   }
   return (
-    <PremiumContainer id='premium-boon'>
+    <Container id='premium-boon'>
       <Title> 모든 Premium 요금제에는 아래의 혜택이 포함됩니다 </Title>
       <div>
         <CheckList txt={"수백만 개의 곡 감상"} />
@@ -25,7 +25,7 @@ const Boon = () => {
         <CheckList txt={"재생목록 관리"} />
         <CheckList txt={"K-Pop 리스닝 파티"} />
       </div>
-    </PremiumContainer>
+    </Container>
   )
 }
 
