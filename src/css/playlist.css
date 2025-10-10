@@ -1,0 +1,26 @@
+#playlist-header {
+  padding: 20px;
+  align-items: flex-end;
+  gap: 20px;
+  background: linear-gradient(to bottom, #768ba5, #23374f);
+}
+
+#playlist-header-img {
+  width: 232px;
+  height: 232px;
+  border-radius: 4px;
+  box-shadow: 0 0 20px #00000050;
+}
+
+#playlist-header-subtitle { font-size: 14px; }
+#playlist-header-title {
+  font-size: 70px;
+  font-weight: 900;
+}
+
+#playlist-header-description {
+  gap: 4px;
+  font-size: 14px;
+  color: #c2c7cf;
+}
+#playlist-header-description-username { color: #FFFFFF; }
