@@ -12,6 +12,7 @@ const Boon = () => {
       </Flex>
     )
   }
+  
   return (
     <Container id='premium-boon'>
       <Title> 모든 Premium 요금제에는 아래의 혜택이 포함됩니다 </Title>
