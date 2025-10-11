@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { Start, Add, Hide, FullSize, Search, List } from '../assets/icons'
+import { Start, Add, Hide, FullSize, Search, Inventory } from '../assets/icons'
 import { album1 } from '../assets/album/index.jsx'
 import '../css/library.css'
 import { Flex } from '../styles/common.js'
@@ -52,7 +52,7 @@ function Library() {
           <Icon id='library-search-icon'> <Search size={"16"} /> </Icon>
           <Flex id='library-search-menu'>
             <p id='library-search-menu-txt'> 최근 </p>
-            <List size={"16"} />
+            <Inventory size={"16"} />
           </Flex>
         </Flex>
       </Flex>

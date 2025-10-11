@@ -20,9 +20,16 @@ const Flex = styled.div`
   align-items: center;
 `;
 
+const Icon = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+`;
+
 const Title = styled.h1`margin: 0;`;
 const Txt = styled.p`margin:0;`;
 const BoldText = styled.div`margin: 0; font-weight: bold;`
 const UnderlineText = styled.p`margin: 0; text-decoration: underline;`;
 
-export { Wrapper, Content, Flex, Title, Txt, BoldText, UnderlineText }
+export { Wrapper, Content, Flex, Icon, Title, Txt, BoldText, UnderlineText }
