@@ -1,5 +1,5 @@
 import { Flex, Title, Txt, Icon } from '../../styles/common.js';
-import { Start, Download, Invite, More, Inventory, Clock } from '../../assets/icons.jsx'
+import { Start, Download, Invite, More, Inventory } from '../../assets/icons.jsx'
 
 const List = () => {
   return (

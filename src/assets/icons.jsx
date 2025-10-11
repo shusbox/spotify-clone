@@ -57,3 +57,5 @@ export const Invite = ({ size }) => { return <svg width={size} height={size} fil
 export const More = ({ size }) => { return <svg width={size} height={size} fill="currentColor" viewBox="0 0 24 24"><path d="M4.5 13.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m15 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3m-7.5 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path></svg> };
 
 export const Clock = ({ size }) => { return <svg width={size} height={size} fill="currentColor" viewBox="0 0 16 16"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8"></path><path d="M8 3.25a.75.75 0 0 1 .75.75v3.25H11a.75.75 0 0 1 0 1.5H7.25V4A.75.75 0 0 1 8 3.25"></path></svg> };
+
+export const Expand = ({ size }) => {  return <svg width={size} height={size} fill="currentColor" viewBox="0 0 16 16"><path d="m14 6-6 6-6-6z"/></svg> };
