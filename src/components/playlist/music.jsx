@@ -1,5 +1,5 @@
 import { Flex, Txt } from '../../styles/common.js';
-import { Clock, Expand } from '../../assets/icons.jsx';
+import { Clock, Expand, Start } from '../../assets/icons.jsx';
 import { album1, album2 } from '../../assets/album/index.jsx';
 
 const Music = () => {
@@ -7,7 +7,10 @@ const Music = () => {
     return (
       <div className='playlist-music-list'>
         <Flex className='playlist-music-list-music'>
-          <Txt className='playlist-music-list-number'> {number} </Txt>
+          <Flex className='playlist-music-list-number-container'>
+            <Flex className='playlist-music-list-number'> <Txt> {number} </Txt> </Flex>
+            <div className='playlist-music-list-start'> <Start size={"16"} /> </div>
+          </Flex>
           <Flex className='playlist-music-list-title-container'>
             <img className='playlist-music-list-img' src={img} />
             <div className='playlist-music-list-title'>
@@ -48,8 +51,11 @@ const Music = () => {
       </div>
       <div id='playlist-music-line' />
       <div id='playlist-music-list-container'>
-        <MusicList number={"1"} img={album1} title={"MEMORY"} singer={"이세계 아이돌"} album={"Stargazer"} date={"3주 전"} time={"4:31"} />
-        <MusicList number={"2"} img={album2} title={"RE:WIND"} singer={"이세계 아이돌"} album={"RE:WIND"} date={"3주 전"} time={"4:31"} />
+        <MusicList number={"1"} img={album2} title={"RE:WIND"} singer={"이세계 아이돌"} album={"RE:WIND"} date={"3주 전"} time={"4:31"} />
+        <MusicList number={"2"} img={album1} title={"MEMORY"} singer={"이세계 아이돌"} album={"Stargazer"} date={"3주 전"} time={"4:31"} />
+        <MusicList number={"3"} img={album1} title={"Stargazers"} singer={"이세계 아이돌"} album={"Stargazers"} date={"3주 전"} time={"3:38"} />
+        <MusicList number={"4"} img={album1} title={"ELEVATE"} singer={"이세계 아이돌"} album={"Stargazers"} date={"3주 전"} time={"3:10"} />
+        <MusicList number={"5"} img={album1} title={"MEMORY"} singer={"이세계 아이돌"} album={"Stargazers"} date={"3주 전"} time={"3:35"} />
       </div>
     </div>
   )

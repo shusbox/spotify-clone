@@ -7,7 +7,6 @@ const Wrapper = styled.div`
 `;
 
 const Content = styled.div`
-  flex: 1;
   position: relative;
   border-radius: 8px;
   background-color: #121212;

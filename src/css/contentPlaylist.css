@@ -1,0 +1,12 @@
+#playlist-content {
+  padding: 20px;
+  width: 420px !important;
+}
+
+#playlist-content-title {
+  justify-content: space-between;
+}
+
+#playlist-content-subtitle {
+  flex-direction: column;
+}
