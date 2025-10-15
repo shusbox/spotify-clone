@@ -1,7 +1,7 @@
 #library {
   box-sizing: border-box;
   padding: 8px;
-  width: 420px !important;
+  min-width: 420px;
   height: 100%;
   display: flex;
   flex-direction: column;
