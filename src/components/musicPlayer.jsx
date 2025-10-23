@@ -1,4 +1,5 @@
 import { album1 } from '../assets/album/index.jsx'
+// 사용하지 않는 album1은 제거하는게 좋을 것 같아요
 import { ToggleShow, Shuffle, Loop, Pause, Start, Play, Previous, NowPlaying, Lyrics, Playlist, Sound, PIP, FullScreen, Connect } from '../assets/icons.jsx'
 import '../css/musicPlayer.css'
 
@@ -35,10 +36,13 @@ function MusicPlayer() {
         <div key={index} id='right-sound-controls'>
           <div className='player-icons tooltip' tooltip-txt={item.txt}> <Comp size={"16"} /> </div>
           <div key={index} id='controls-bar-sound' className='controls-bar' /> {/* 아이거어떡하지 */}
+          {/* key가 중복되는 것 같아요 */}
+          {/* input type="range" 추가하고 value 값을 0에서 100으로 설정하여 음량 조절 기능 추가하면 어떨까요?*/}
         </div>
       )
     }
   });
+  // player_controls와 right_controls이 모두 거의 같은 map 로직을 사용하고 있는 것 같은데 공통 로직으로 함수를 추출하여 사용하면 가독성과 유지보수성이 개선됩니다
 
   return (
     <div id='music-player'>

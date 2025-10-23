@@ -13,6 +13,7 @@ const Music = () => {
           </Flex>
           <Flex className='playlist-music-list-title-container'>
             <img className='playlist-music-list-img' src={img} />
+            {/* 이미지에 alt 속성 추가하는게 SEO 측면에서 좋을 것 같아요 */}
             <div className='playlist-music-list-title'>
               <div className='playlist-music-list-title-txt'> <Txt> {title} </Txt> </div>
               <div className='playlist-music-list-title-subtxt'> <Txt> {singer} </Txt> </div>
@@ -25,6 +26,8 @@ const Music = () => {
       </div>
     )
   }
+
+  // MusicList 컴포넌트를 Music 내부에 넣을 경우 렌더링 될때마다 함수가 재생성됩니다 최적화를 위해 파일 분리 혹은 외부 정의가 좋습니다
 
   return (
     <div id='playlist-music'>
@@ -57,6 +60,7 @@ const Music = () => {
         <MusicList number={"4"} img={album1} title={"ELEVATE"} singer={"이세계 아이돌"} album={"Stargazers"} date={"3주 전"} time={"3:10"} />
         <MusicList number={"5"} img={album1} title={"MEMORY"} singer={"이세계 아이돌"} album={"Stargazers"} date={"3주 전"} time={"3:35"} />
       </div>
+      // 지금은 정적인 데이터이지만 데이터를 서버에서 받아온다고 가정하고 코드를 짜면 이후에 백엔드를 연결해야할 때 좋습니다. 데이터를 musicData로 만들고, map을 사용하여 렌더링 해봅시다.
     </div>
   )
 };

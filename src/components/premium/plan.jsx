@@ -6,6 +6,7 @@ const Plan = () => {
   const Card = ({ link }) => {
     return <div className='premium-plan-card'> <img className='premium-plan-card-img' src={link} /> </div>;
   }
+  // Card 컴포넌트를 파일 분리 혹은 외부 선언합시다
 
   return (
     <Container id='premium-plan'>
@@ -20,6 +21,7 @@ const Plan = () => {
           <Card link={'https://paymentsdk.spotifycdn.com/svg/cards/amex.svg'} />
           <Card link={'https://paymentsdk.spotifycdn.com/svg/cards/jcb.svg'} />
         </Flex>
+        // 이것도 외부에서 데이터를 받아온다고 가정하고 코드를 짜봅시다
         <Txt id='premium-plan-card-more-txt'> 이외 6개 이상 </Txt>
         <div id='premium-plan-card-more'>
           <Card link={'https://paymentsdk.spotifycdn.com/svg/cards/cup.svg'} />

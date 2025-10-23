@@ -61,3 +61,5 @@ export const Clock = ({ size }) => { return <svg width={size} height={size} fill
 export const Expand = ({ size }) => {  return <svg width={size} height={size} fill="currentColor" viewBox="0 0 16 16"><path d="m14 6-6 6-6-6z"/></svg> };
 
 export const Close = ({ size }) => { return <svg width={size} height={size} fill="currentColor" viewBox="0 0 16 16"><path d="M2.47 2.47a.75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06"/></svg> };
+
+// 이런식으로 해도 괜찮지만 Icons 컴포넌트를 만들어 prop으로 어떤 아이콘을 사용할지 전달하여 사용하면 외부에서 사용할 때 import 코드가 더 깔끔해질 것 같습니다

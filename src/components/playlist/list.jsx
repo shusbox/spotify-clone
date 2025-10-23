@@ -14,6 +14,7 @@ const List = () => {
           <div className='playlist-list-option-preview-icon'> <Download size={"32"} /> </div>
           <div className='playlist-list-option-preview-icon'> <Invite size={"32"} /> </div>
           <div className='playlist-list-option-preview-icon'> <More size={"32"} /> </div>
+          {/* 중복되는 코드들을 컴포넌트로 분리하는게 좋을 것 같아요 */}
         </Flex>
         <Flex id='playlist-list-inventory'>
           <Txt id='playlist-list-inventory-txt'> 목록 </Txt>

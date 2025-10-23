@@ -28,6 +28,7 @@ function MainContent() {
     { type: "playlist", img: cover7, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" },
     { type: "playlist", img: cover8, txt: "현재 가장 많이 재생된 트랙의 일일 업데이트입니다" }
   ];
+  // 이미지에 alt 속성 추가하는게 좋을거같아요 그리고 동적 데이터 확장을 위해 data 파일로 분리시키면 깔끔할 것 같습니다
 
   const content_main_playlist_1 = content_main_playlist_arr_1.map((item, index) => {
     return (

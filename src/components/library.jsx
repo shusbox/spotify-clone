@@ -26,13 +26,14 @@ function Library() {
       </Flex>
     )
   }
+  // PlayList를 외부 선언 혹은 파일 분리합시다
 
   return (
     <div id='library'>
       <Flex id='library-header'>
         <Flex id='library-title'>
           <Flex id='library-title-txt-container'>
-            <div id='library-title-txt-icons'>
+            <div id='library-title-txt-icons'> {/* id는 DOM상에서 교유해야합니다 */}
               <Hide size={"16"} />
             </div>
             <h2 id='library-title-txt'> 내 라이브러리 </h2>
@@ -43,6 +44,7 @@ function Library() {
               <p id='library-create-txt'> 만들기 </p>
             </Flex>
             <div id='library-fullscreen'> <FullSize size={"16"} /> </div> {/* 이거 툴팁 올라오게 해야되는데ㅠㅠ */}
+            {/* data-tooltip을 사용하거나 react-tooltip 라이브러리를 활용해보세요 */}
           </Flex>
         </Flex>
         <div id='library-filter'>
