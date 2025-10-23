@@ -12,6 +12,8 @@ const Boon = () => {
       </Flex>
     )
   }
+
+  // CheckList 컴포넌트를 Boon 내부에 넣을 경우 렌더링 될때마다 함수가 재생성됩니다. 최적화를 위해 파일 분리 혹은 외부 정의가 좋습니다
   
   return (
     <Container id='premium-boon'>
@@ -25,6 +27,7 @@ const Boon = () => {
         <CheckList txt={"친구와 함께 실시간으로 감상"} />
         <CheckList txt={"재생목록 관리"} />
         <CheckList txt={"K-Pop 리스닝 파티"} />
+        {/* 이것도 외부에서 데이터를 받아온다고 가정하고 코드를 짜봅시다 */}
       </div>
     </Container>
   )

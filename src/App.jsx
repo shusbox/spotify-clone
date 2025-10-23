@@ -12,10 +12,9 @@ function App() {
           <Route path='/' element={<Index />} />
           <Route path='/premium' element={<Premium />} />
           <Route path='/playlist' element={<Playlist />} />
+          {/* 404 라우트 추가하여 존재하지 않는 페이지를 처리하면 좋을 것 같아요 ex) <Route path="*" element={<NotFound />} /> */}
         </Routes>
       </BrowserRouter>
     </>
   )
 }
-
-export default App

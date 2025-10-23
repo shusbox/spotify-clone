@@ -22,6 +22,7 @@ const Premium = () => {
       </Content>
     )
   }
+  // PremiumContent 컴포넌트를 파일 분리 혹은 외부 선언합시다
 
   return (
     <Wrapper>

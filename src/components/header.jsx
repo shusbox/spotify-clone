@@ -10,6 +10,7 @@ const Icon = styled.div`
   justify-content: center;
   color: #b3b3b3;
 `;
+// 중복된 Icon 정의는 `styles/common.js`의 Icon으로 통일하면 어떨까요?
 
 function Header() {
   return (
@@ -34,6 +35,7 @@ function Header() {
           <Download size={"16px"} />
           <p> 앱 설치하기 </p>
         </div>
+        {/* size에는 "16px" 대신 숫자로 전달하는게 더 좋을거같아요 */}
         <nav>
           <div id='nav-icons'>
             <Icon id='nav-notification'> <Notification size={"16px"} /> </Icon>
